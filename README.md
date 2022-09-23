@@ -1,0 +1,3 @@
+# JavaFXMessenger
+
+To use the messenger, you need to have a MySQL database on your computer with a "users" table with the fields: login (varchar(80), pk, nn) and password (varchar(45), nn). In the main class there is a CFG class where you need to enter the username, password from the database and change the reference to the database. For use OUTSIDE the local network, an open port is required, which the messenger will use.

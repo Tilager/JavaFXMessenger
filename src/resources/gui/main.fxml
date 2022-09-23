@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="255.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.app.controllers.MainController">
+   <VBox fx:id="authMenu" alignment="CENTER" layoutX="118.0" layoutY="14.0" prefHeight="120.0" prefWidth="249.0"
+         spacing="7.0">
+      <TextField fx:id="loginTextField" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" promptText="Login"/>
+      <PasswordField fx:id="passwordTextField" maxWidth="-Infinity" prefHeight="28.0" prefWidth="200.0"
+                     promptText="Password"/>
+      <HBox alignment="CENTER" prefHeight="49.0" prefWidth="424.0" spacing="13.0">
+         <Button mnemonicParsing="false" onAction="#onRegButtonClick" prefHeight="32.0" prefWidth="107.0"
+                 styleClass="buttons" stylesheets="@../css/mainWindow.css" text="Register">
+            <font>
+               <Font name="Corbel Bold" size="20.0"/>
+            </font>
+         </Button>
+         <Button defaultButton="true" mnemonicParsing="false" onAction="#onLogButtonClick" prefHeight="32.0"
+                 prefWidth="107.0" styleClass="buttons" stylesheets="@../css/mainWindow.css" text="Login">
+            <font>
+               <Font name="Corbel Bold" size="20.0"/>
+            </font>
+         </Button>
+      </HBox>
+   </VBox>
+   <VBox fx:id="roomMenu" alignment="CENTER" disable="true" layoutX="1.0" layoutY="164.0" prefHeight="120.0"
+         prefWidth="484.0">
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="26.0">
+         <Button fx:id="createRoomButton" mnemonicParsing="false" onAction="#onCreateButtonClick"
+                 prefHeight="22.0" prefWidth="148.0" styleClass="buttons" stylesheets="@../css/mainWindow.css"
+                 text="Create room">
+            <font>
+               <Font name="Corbel Bold" size="21.0"/>
+            </font>
+            <opaqueInsets>
+               <Insets/>
+            </opaqueInsets>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#onJoinButtonClick" prefHeight="40.0" prefWidth="124.0"
+                 styleClass="buttons" stylesheets="@../css/mainWindow.css" text="Join room">
+            <font>
+               <Font name="Corbel Bold" size="21.0"/>
+            </font>
+         </Button>
+      </HBox>
+      <TextField fx:id="inIpAddress" alignment="CENTER" prefHeight="8.0" prefWidth="464.0" promptText="IP ADRESS"
+                 text="localhost:25565">
+         <font>
+            <Font size="21.0"/>
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+         </VBox.margin>
+      </TextField>
+   </VBox>
+</AnchorPane>

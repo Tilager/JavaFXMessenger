@@ -1,0 +1,23 @@
+.main {
+    -fx-background-color: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%);
+}
+
+.chat {
+    -fx-background-color: rgba(255, 255, 255, 0.5);
+}
+
+.rounded-send-label {
+    -fx-font-size: 18;
+    -fx-background-color: #33a8ff;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-background-radius: 100px;
+}
+
+.rounded-add-label {
+    -fx-font-size: 18;
+    -fx-background-color: #818181;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-background-radius: 100px;
+}
